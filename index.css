@@ -9,6 +9,10 @@ a {
   font-weight: bolder;
 }
 
+a:hover {
+  text-decoration: underline;
+}
+
 .mdl-color-text--white a {
   color: white;
 }
@@ -65,9 +69,18 @@ section p {
   border: 1px solid;
 }
 
+.outlined:hover {
+  background-color: white;
+  color: black;
+}
+
 .mdl-navigation__link.mdl-button {
   line-height: normal;
   font-weight: 500;
+}
+
+.mdl-navigation__link.mdl-button:not(:last-child) {
+  margin-right: 20px;
 }
 
 header h1 {
@@ -209,9 +222,27 @@ footer a {
   justify-content: space-between;
 }
 
+#contact .container form>div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+#contact .container form>div>* {
+  margin-top: 40px;
+}
+
+#contact .container form>div div:nth-child(1), #contact .container form>div div:nth-child(2) {
+  width: 47%;
+}
+
+#contact .container form>div div:nth-child(3) {
+  width: 100%;
+}
+
 #contact button {
-  float: right;
-  align-items: center;
+  margin-left: auto;
 }
 
 @media (max-width: 1440px) {
@@ -256,95 +287,3 @@ footer a {
     display: none;
   }
 }
-
-/* body {
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-}
-figure {
-    display: inline-block;
-}
-.container {
-    width: 940px;
-    margin-left: auto;
-    margin-right: auto;
-}
-main {
-    margin-top: -20px;
-}
-main::before {
-    content: "";
-    display: inline-block;
-    width: 100%;
-    height: 20px;
-    border-top-left-radius: 50% 100%;
-    border-top-right-radius: 50% 100%;
-    background-color: white;
-}
-header {
-    padding: 52px;
-    background-image: url(images/space-landscape.png);
-}
-header nav {
-    display: flex;
-}
-header nav a {
-    padding: 4px 8px;
-}
-header nav a.secondary {
-    box-sizing: border-box;
-    border: 1px solid;
-}
-header nav li {
-    display: inline;
-    list-style: none;
-}
-header nav .brand {
-    text-transform: uppercase;
-}
-header nav .right {
-    margin-left: auto;
-}
-.header {
-    display: grid;
-    grid-template-columns: repeat(2);
-}
-.header img {
-    grid-column: 1;
-}
-.header section {
-    grid-column: 2;
-}
-.header section p {
-    display: inline-block;
-}
-.header section h1 {
-    text-transform: uppercase;
-}
-#concept img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-#tech {
-    background-color: rgba(66, 133, 244, 0.05);
-}
-#tech li {
-    display: inline;
-    list-style: none;
-}
-#design {
-    background-color: #333333;
-}
-#design li {
-    display: inline;
-    list-style: none;
-}
-#support {
-    background-color: #3fa3f9;
-}
-#support li {
-    display: inline;
-    list-style: none;
-} */
