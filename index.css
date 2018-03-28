@@ -2,6 +2,7 @@
 
 * {
   font-family: Roboto;
+  -webkit-font-smoothing: antialiased;
 }
 
 a {
@@ -19,9 +20,11 @@ a:hover {
 
 section {
   padding: 80px 0 100px 0;
+  color: #333333;
 }
 
 section h2 {
+  font-size: 40px;
   font-weight: 900;
   margin-bottom: 40px;
 }
@@ -41,6 +44,7 @@ section p {
 
 .mdl-layout__header {
   background-image: url(images/space-landscape.png);
+  background-size: cover;
   padding: 60px 80px 0 80px;
   overflow: hidden;
   box-shadow: none;
@@ -57,6 +61,10 @@ section p {
 .mdl-mini-footer {
   background-color: rgba(0, 0, 0, 0);
   padding: 0 80px 30px 80px;
+}
+
+.mdl-logo {
+  color: #333333;
 }
 
 .container {
@@ -225,23 +233,34 @@ footer a {
 
 #support {
   background-color: #4285f4;
+  padding: 0;
 }
 
 #support p {
   text-align: unset;
 }
 
+#support h2 {
+  font-weight: 300;
+  font-size: 40px;
+}
+
+#support a {
+  font-weight: bold;
+}
+
 #support img {
   margin-left: 100px;
   margin-top: 100px;
   margin-bottom: 100px;
-  margin-right: 40px;
-  min-width: 160px;
-  width: 160px;
-  height: 160px;
+  margin-right: 0;
+  min-width: 120px;
+  width: 120px;
+  height: 120px;
 }
 
 #support .container {
+  width: 1200px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -268,47 +287,4 @@ footer a {
 
 #contact button {
   margin-left: auto;
-}
-
-@media (max-width: 1440px) {
-  .header-overlay {
-    justify-content: space-between;
-  }
-
-  .greater-1440 {
-    display: none;
-  }
-}
-
-@media (min-width: 1441px) {
-  #support .container {
-    width: 1200px;
-  }
-
-  #support {
-    padding: 0;
-  }
-
-  #support h2 {
-    font-weight: 300;
-    font-size: 40px;
-  }
-
-  #support a {
-    font-weight: bold;
-  }
-
-  #support img {
-    margin-left: 100px;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    margin-right: 0;
-    min-width: 120px;
-    width: 120px;
-    height: 120px;
-  }
-
-  .less-1440 {
-    display: none;
-  }
 }
