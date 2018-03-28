@@ -8,6 +8,7 @@
 a {
   text-decoration: none;
   font-weight: bolder;
+  color: #4285f4;
 }
 
 a:hover {
@@ -82,6 +83,19 @@ section p {
   color: black;
 }
 
+.accent {
+  color: #4285f4;
+}
+
+.filled-accent {
+  background-color: #4285f4;
+  color: white;
+}
+
+button.filled-accent:hover {
+  background-color: #4285f4;
+}
+
 .mdl-navigation__link.mdl-button {
   line-height: normal;
   font-weight: 500;
@@ -98,10 +112,6 @@ header h1 {
   font-weight: bold;
   /* font-family: Roboto; */
   text-transform: uppercase;
-}
-
-header h1 span {
-  color: #4285f4;
 }
 
 header img {
@@ -187,17 +197,65 @@ footer a {
   background-color: rgba(66, 133, 244, 0.05);
 }
 
-#tech .container div {
+#tech .container>div {
   display: flex;
   justify-content: space-between;
   margin-top: 80px;
 }
 
-#tech img {
+#tech .container>div>div {
   width: 110px;
   height: 110px;
-  display: block;
-  object-fit: scale-down;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#tech .es-6 {
+  background-image: url(images/es-6-normal.svg);
+}
+
+#tech .jquery {
+  background-image: url(images/jquery-normal.svg);
+}
+
+#tech .mdl {
+  background-image: url(images/getmdl-normal.svg);
+}
+
+#tech .sass {
+  background-image: url(images/sass-normal.svg);
+}
+
+#tech .gulp {
+  background-image: url(images/gulp-normal.svg);
+}
+
+#tech .d-3 {
+  background-image: url(images/d-3-normal.svg);
+}
+
+#tech .es-6:hover {
+  background-image: url(images/es6_hover.svg);
+}
+
+#tech .jquery:hover {
+  background-image: url(images/jquery-normal.svg);
+}
+
+#tech .mdl:hover {
+  background-image: url(images/getmdl_hover.svg);
+}
+
+#tech .sass:hover {
+  background-image: url(images/sass_hover.svg);
+}
+
+#tech .gulp:hover {
+  background-image: url(images/gulp_hover.svg);
+}
+
+#tech .d-3:hover {
+  background-image: url(images/d3_hover.svg);
 }
 
 #design {
