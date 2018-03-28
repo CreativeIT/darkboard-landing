@@ -31,7 +31,12 @@
     </header>
     <main class="mdl-layout__content">
       <section id="concept" class="container">
-        <img src="images/artboard.png" alt="">
+        <div class="parallax">
+          <img src="images/dashboard_page_empty.png" alt="" class="parallax-hidden">
+          <div class="parallax-overlay">
+            <img src="images/cards.png" alt="" class="parallax-layer">
+          </div>
+        </div>
         <h2>What is this?</h2>
         <p>
           Material admin template is <a href="">absolutely free</a> for commercial usage theme, that uses google's implementation of material design - <a href="">Material Design Lite</a> library.<br/>It doesn’t rely on any JavaScript frameworks and aims to be responsive and optimized for cross-device usage. All components are created with CSS (scss), JavaScript (es6), and HTML5.
@@ -123,5 +128,19 @@
       </div>
     </footer>
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <script type="text/javascript">
+      (function () {
+        const parallax = document.querySelector('#concept .parallax');
+        const parallaxLayer = document.querySelector('#concept .parallax-layer');
+        let viewportHeight = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+        window.addEventListener('resize', () => viewportHeight = Math.max(document.documentElement.clientHeight, window.innerHeight || 0));
+        document.addEventListener('scroll', () => {
+          const parallaxRect = parallax.getBoundingClientRect();
+          if (0 < parallaxRect.y + parallaxRect.height && parallaxRect.y + parallaxRect.height < viewportHeight + parallaxRect.height) {
+            parallaxLayer.style.transform = `translateY(-${15 - (parallaxRect.y + parallaxRect.height) / (2 * parallaxRect.height) * 15}%)`;
+          }
+        });
+      })();
+    </script>
   </body>
 </html>

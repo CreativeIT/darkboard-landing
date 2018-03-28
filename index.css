@@ -146,6 +146,31 @@ footer a {
   font-weight: inherit;
 }
 
+#concept .parallax {
+  background-image: url(images/dashboard_page_empty.png);
+  background-size: contain;
+  position: relative;
+}
+
+#concept .parallax-hidden {
+  visibility: hidden;
+  width: 100%;
+}
+
+#concept .parallax-overlay {
+  position: absolute;
+  top: 5.8%;
+  right: 0;
+  bottom: 0;
+  left: 12.5%;
+  padding: 1%;
+  overflow-y: hidden;
+}
+
+#concept .parallax-layer {
+  width: 100%;
+}
+
 #concept h2 {
   margin-top: 60px;
 }
