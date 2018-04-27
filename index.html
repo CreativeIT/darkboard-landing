@@ -25,7 +25,7 @@
           <div class="demo">
             <span>Have more fun with Live Demo</span>
             <a href="http://creativeit.io/test-material-dashboard-lite/">
-              <button class="mdl-button mdl-js-button mdl-js-ripple-effect filled-accent">Live Demo</button>
+              <button class="mdl-button mdl-js-button mdl-js-ripple-effect filled-accent">Go!</button>
             </a>
           </div>
         </div>
@@ -33,7 +33,7 @@
     </header>
     <main class="mdl-layout__content">
       <section id="concept" class="container">
-        <div class="parallax">
+        <div data-aos="fade-up" class="parallax">
           <img src="images/dashboard_page_empty.png" alt="" class="parallax-hidden">
           <div class="parallax-overlay">
             <img src="images/cards.png" alt="" class="parallax-layer">
@@ -48,7 +48,7 @@
         <div class="container">
           <h2 data-aos="fade-up">Review</h2>
           <blockquote data-aos="fade-up" cite="https://github.com/google/material-design-lite/issues/4195#issuecomment-195460233">
-            <p class="accent">
+            <p>
               Playing around with your customisations this looks quite well done. <br/>I haven't seen enough folks playing around with darker Material Design variants with MDL so this is awesome to see.
             </p>
             <footer class="author">
@@ -62,15 +62,18 @@
         <div class="container">
           <h2 data-aos="fade-up">Technical moments</h2>
           <p data-aos="fade-up">
-            Material admin template uses google's implementation of material design - Material Design Lite library.<br/>It doesn’t rely on any JavaScript frameworks and aims to be responsive and optimized for cross-device usage. All components are created with CSS (scss), JavaScript (es6), and HTML5. <a href="">Read more</a>
+            Material admin template uses google's implementation of material design - Material Design Lite library.
+          </p>
+          <p data-aos="fade-up">
+            All components are created with vanilla javascript (es6), sass and html5. Here is no jQuery and aims to be responsive and light-weight for cross-device usage. <a href="">Read more</a>
           </p>
           <div>
-            <div class="es-6"></div>
-            <div class="jquery"></div>
-            <div class="mdl"></div>
-            <div class="sass"></div>
-            <div class="gulp"></div>
-            <div class="d-3"></div>
+            <div data-aos="fade-up" class="es-6"></div>
+            <div data-aos="fade-up" data-aos-delay="100" class="jquery"></div>
+            <div data-aos="fade-up" data-aos-delay="200" class="mdl"></div>
+            <div data-aos="fade-up" data-aos-delay="300" class="sass"></div>
+            <div data-aos="fade-up" data-aos-delay="400" class="gulp"></div>
+            <div data-aos="fade-up" data-aos-delay="500" class="d-3"></div>
           </div>
         </div>
       </section>
@@ -81,22 +84,16 @@
             DARKBOARD is the first admin theme with dark material design concept. It was challenging project for us to design dashboard in dark material style, given data readability and usability in widgets. So here it is and we are very interested in your opinion! Fill free to <a href="">write</a> us!
           </p>
           <div class="mdl-grid">
-            <figure class="mdl-cell mdl-cell--3-col">
-              <div class="circle">
-                <img src="images/untitled-3.png" alt=""/>
-              </div>
+            <figure data-aos="fade-up" class="mdl-cell mdl-cell--3-col">
+              <img src="images/responsive_icon.gif" alt=""/>
               <figcaption>Fully responsive</figcaption>
             </figure>
-            <figure class="mdl-cell mdl-cell--6-col">
-              <div class="circle">
-                <img src="images/untitled-2.png" alt=""/>
-              </div>
+            <figure data-aos="fade-up" data-aos-delay="200" class="mdl-cell mdl-cell--6-col">
+              <img src="images/UX_icon.gif" alt=""/>
               <figcaption>User experience focused</figcaption>
             </figure>
-            <figure class="mdl-cell mdl-cell--3-col">
-              <div class="circle">
-                <img src="images/untitled-1.png" alt=""/>
-              </div>
+            <figure data-aos="fade-up" data-aos-delay="400" class="mdl-cell mdl-cell--3-col">
+              <img src="images/Dark_icon.gif" alt=""/>
               <figcaption>Dark material design</figcaption>
             </figure>
           </div>
@@ -107,14 +104,14 @@
           <h2>You can give us a star on <a href="https://github.com/CreativeIT/material-dashboard-lite">Github</a> to support our work.</h2>
           <div>
             <img src="images/GitHub-Mark-Light-120px-plus.png" alt="">
-            <a class="github-button" href="https://github.com/CreativeIT/darkboard-landing" data-icon="octicon-star" data-size="large" aria-label="Star CreativeIT/darkboard-landing on GitHub">Star</a>
+            <a class="github-button" href="https://github.com/CreativeIT/material-dashboard-lite" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star CreativeIT/material-dashboard-lite on GitHub">Star</a>
           </div>
         </div>
       </section>
       <section id="contact">
         <div class="container">
           <h2 data-aos="fade-up">Contact with us</h2>
-          <p data-aos="fade-up">We are open for collaboration. Fill free to write us on Hello@creativeit.io or you can ask whatever you want  in following form.</p>
+          <p data-aos="fade-up">We are open for collaboration. Fill free to write us on <a href="mailto:Hello@creativeit.io">Hello@creativeit.io</a> or you can ask whatever you want  in following form.</p>
           <form action="">
             <div>
               <div class="mdl-textfield mdl-js-textfield">
@@ -139,26 +136,28 @@
     </main>
     <footer class="mdl-mini-footer">
       <div class="mdl-mini-footer__left-section">
-        <span class="mdl-logo">©2018. Developed and designed by <a href="http://creativeit.io/">CreativeIT</a></span>
+        <span class="mdl-logo">©2018. Developed and designed by <a href="http://creativeit.io/">CreativeIT</a>  team.</span>
       </div>
     </footer>
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.js"></script>
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <script defer src="https://buttons.github.io/buttons.js"></script>
     <script type="text/javascript">
       document.addEventListener('DOMContentLoaded', () => {
         AOS.init({
           duration: 600,
         });
         {
+          // const
           const parallax = document.querySelector('#concept .parallax');
           const parallaxLayer = document.querySelector('#concept .parallax-layer');
           let viewportHeight = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
           window.addEventListener('resize', () => viewportHeight = Math.max(document.documentElement.clientHeight, window.innerHeight || 0));
           document.addEventListener('scroll', () => {
-            const parallaxRect = parallax.getBoundingClientRect();
-            if (0 < parallaxRect.y + parallaxRect.height && parallaxRect.y + parallaxRect.height < viewportHeight + parallaxRect.height) {
-              parallaxLayer.style.transform = `translateY(-${15 - (parallaxRect.y + parallaxRect.height) / (2 * parallaxRect.height) * 15}%)`;
+            const { height, y } = parallax.getBoundingClientRect();
+
+            if (viewportHeight / 3 < y + height / 2 && y + height / 2 < 2 * viewportHeight / 3) {
+              parallaxLayer.style.transform = `translateY(-${15 - (y + height / 2 - viewportHeight / 3) / (viewportHeight / 3) * 15}%)`;
             }
           });
         }
