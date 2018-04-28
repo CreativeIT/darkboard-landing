@@ -17,7 +17,7 @@ body {
 a {
   text-decoration: none;
   font-weight: bold;
-  color: white;
+  color: inherit;
 }
 
 a:hover {
@@ -53,11 +53,8 @@ section p {
 }
 
 .mdl-layout__header {
-  background-image: url(images/space-landscape.png);
-  background-size: cover;
+  position: absolute;
   padding: 60px 80px 0 80px;
-  overflow: hidden;
-  box-shadow: none;
 }
 
 .mdl-layout__header-row {
@@ -99,6 +96,7 @@ section p {
 
 .outlined {
   border: 1px solid;
+  border-radius: 2px;
 }
 
 .outlined:hover {
@@ -123,16 +121,14 @@ button.filled-accent:hover {
   height: auto;
 }
 
-.mdl-navigation__link.mdl-button {
-  line-height: normal;
+.mdl-navigation .mdl-navigation__link {
+  line-height: 36px;
+  text-transform: uppercase;
+  text-decoration: none;
   font-weight: 500;
 }
 
-.mdl-navigation__link.mdl-button:not(:last-child) {
-  margin-right: 20px;
-}
-
-header h1 {
+.jumbotron h1 {
   font-size: 54px;
   line-height: 72px;
   letter-spacing: 5px;
@@ -141,27 +137,38 @@ header h1 {
   text-transform: uppercase;
 }
 
-header img {
-  object-fit: contain;
-}
-
-.header-overlay {
+.jumbotron {
+  color: white;
+  background-image: url(images/space-landscape.png);
+  background-size: cover;
   display: flex;
   align-items: stretch;
   justify-content: space-evenly;
   width: 100%;
-  padding-top: 120px;
-  padding-bottom: 140px;
+  padding-top: 235px;
+  padding-bottom: 280px;
+  position: relative;
 }
 
-.header-caption {
+.jumbotron::after {
+  position: absolute;
+  content: "";
+  width: 120%;
+  height: 80px;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  background-color: var(--color-background);
+  bottom: 0;
+}
+
+.jumbotron-caption {
   width: 430px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.header-caption .accent {
+.jumbotron-caption .accent {
   color: var(--dodger-blue);
 }
 
@@ -177,17 +184,6 @@ header img {
 
 .demo button {
   text-transform: uppercase;
-}
-
-header::after {
-  content: "";
-  width: 120%;
-  height: 80px;
-  margin-bottom: -40px;
-  margin-left: -10%;
-  border-top-left-radius: 50%;
-  border-top-right-radius: 50%;
-  background-color: var(--color-background);
 }
 
 #concept .parallax {

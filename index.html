@@ -9,18 +9,20 @@
     <link rel="stylesheet" href="index.css">
   </head>
   <body>
-    <header class="mdl-layout__header">
+    <header class="mdl-layout__header mdl-layout__header--transparent">
       <nav class="mdl-layout__header-row">
         <span class="mdl-layout__title">Darkboard</span>
         <div class="mdl-layout-spacer"></div>
         <nav class="mdl-navigation">
-          <button class="mdl-navigation__link mdl-button mdl-js-button mdl-js-ripple-effect">Docs</button>
-          <button class="mdl-navigation__link mdl-button mdl-js-button mdl-js-ripple-effect outlined">Hire us</button>
+          <a href="docs.html" class="mdl-navigation__link mdl-js-ripple-effect">Docs</a>
+          <a href="" class="mdl-navigation__link mdl-js-ripple-effect outlined">Hire us</a>
         </nav>
       </nav>
-      <div class="header-overlay">
+    </header>
+    <main class="mdl-layout__content">
+      <div class="jumbotron">
         <img src="images/group-2.png" alt=""/>
-        <div class="header-caption">
+        <div class="jumbotron-caption">
           <h1>Completely open source <span class="accent">admin dashboard</span></h1>
           <div class="demo">
             <span>Have more fun with Live Demo</span>
@@ -30,8 +32,6 @@
           </div>
         </div>
       </div>
-    </header>
-    <main class="mdl-layout__content">
       <section id="concept" class="container">
         <div data-aos="fade-up" class="parallax">
           <img src="images/dashboard_page_empty.png" alt="" class="parallax-hidden">

@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+
+img {
+  width: 100%;
+}
+
+#readme {
+  padding-top: 200px;
+}
+
+#readme blockquote {
+  color: #305ea9;
+  border-left: 5px solid #305ea9;
+  margin-left: 0;
+  padding-left: 16px;
+}
+
+#readme blockquote::before {
+  content: none;
+}
+
+#readme blockquote::after {
+  content: none;
+}
+
+#readme li {
+  font-size: 24px;
+}
+
+#readme pre {
+  background-color: #555;
+  padding: 24px 40px;
+}
+
+#readme ul pre,
+#readme ol pre {
+  margin-left: -40px;
+}
+
+#readme pre code {
+  font-family: 'Roboto Mono';
+  -webkit-font-smoothing: antialiased;
+  font-size: 20px;
+}
