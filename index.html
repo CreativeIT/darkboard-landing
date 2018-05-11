@@ -11,7 +11,7 @@
   <body>
     <header class="mdl-layout__header mdl-layout__header--transparent">
       <nav class="mdl-layout__header-row">
-        <span class="mdl-layout__title">Darkboard</span>
+        <span class="mdl-layout__title"></span>
         <div class="mdl-layout-spacer"></div>
         <nav class="mdl-navigation">
           <a href="docs.html" class="mdl-navigation__link mdl-js-ripple-effect">Docs</a>
@@ -21,7 +21,7 @@
     </header>
     <main class="mdl-layout__content">
       <div class="jumbotron">
-        <img src="images/group-2.png" alt=""/>
+        <div class="jumbotron-image"></div>
         <div class="jumbotron-caption">
           <h1>Completely open source <span class="accent">admin dashboard</span></h1>
           <div class="demo">
@@ -49,7 +49,7 @@
           <h2 data-aos="fade-up">Review</h2>
           <blockquote data-aos="fade-up" cite="https://github.com/google/material-design-lite/issues/4195#issuecomment-195460233">
             <p>
-              Playing around with your customisations this looks quite well done. <br/>I haven't seen enough folks playing around with darker Material Design variants with MDL so this is awesome to see.
+              Playing around with your customisations this looks quite well done. I haven't seen enough folks playing around with darker Material Design variants with MDL so this is awesome to see.
             </p>
             <footer class="author">
               <span class="name">- Addy Osmani</span>
@@ -68,12 +68,16 @@
             All components are created with vanilla javascript (es6), sass and html5. Here is no jQuery and aims to be responsive and light-weight for cross-device usage. <a href="">Read more</a>
           </p>
           <div>
-            <div data-aos="fade-up" class="es-6"></div>
-            <div data-aos="fade-up" data-aos-delay="100" class="jquery"></div>
-            <div data-aos="fade-up" data-aos-delay="200" class="mdl"></div>
-            <div data-aos="fade-up" data-aos-delay="300" class="sass"></div>
-            <div data-aos="fade-up" data-aos-delay="400" class="gulp"></div>
-            <div data-aos="fade-up" data-aos-delay="500" class="d-3"></div>
+            <div>
+              <div data-aos="fade-up" class="es-6"></div>
+              <div data-aos="fade-up" data-aos-delay="100" class="jquery"></div>
+              <div data-aos="fade-up" data-aos-delay="200" class="mdl"></div>
+            </div>
+            <div>
+              <div data-aos="fade-up" data-aos-delay="300" class="sass"></div>
+              <div data-aos="fade-up" data-aos-delay="400" class="gulp"></div>
+              <div data-aos="fade-up" data-aos-delay="500" class="d-3"></div>
+            </div>
           </div>
         </div>
       </section>
@@ -84,15 +88,15 @@
             DARKBOARD is the first admin theme with dark material design concept. It was challenging project for us to design dashboard in dark material style, given data readability and usability in widgets. So here it is and we are very interested in your opinion! Fill free to <a href="">write</a> us!
           </p>
           <div class="mdl-grid">
-            <figure data-aos="fade-up" class="mdl-cell mdl-cell--3-col">
+            <figure data-aos="fade-up" class="mdl-cell mdl-cell--4-col mdl-cell--2-col-tablet mdl-cell--8-col-phone">
               <img src="images/responsive_icon.gif" alt=""/>
               <figcaption>Fully responsive</figcaption>
             </figure>
-            <figure data-aos="fade-up" data-aos-delay="200" class="mdl-cell mdl-cell--6-col">
+            <figure data-aos="fade-up" data-aos-delay="200" class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--8-col-phone">
               <img src="images/UX_icon.gif" alt=""/>
               <figcaption>User experience focused</figcaption>
             </figure>
-            <figure data-aos="fade-up" data-aos-delay="400" class="mdl-cell mdl-cell--3-col">
+            <figure data-aos="fade-up" data-aos-delay="400" class="mdl-cell mdl-cell--4-col mdl-cell--2-col-tablet mdl-cell--8-col-phone">
               <img src="images/Dark_icon.gif" alt=""/>
               <figcaption>Dark material design</figcaption>
             </figure>
@@ -113,7 +117,7 @@
           <h2 data-aos="fade-up">Contact with us</h2>
           <p data-aos="fade-up">We are open for collaboration. Fill free to write us on <a href="mailto:Hello@creativeit.io">Hello@creativeit.io</a> or you can ask whatever you want  in following form.</p>
           <form action="">
-            <div>
+            <div data-aos="fade-up">
               <div class="mdl-textfield mdl-js-textfield">
                 <input type="text" class="mdl-textfield__input" id="contact-name" name="contact-name">
                 <label for="contact-name" class="mdl-textfield__label">Name</label>

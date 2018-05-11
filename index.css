@@ -52,6 +52,10 @@ section p {
   font-weight: 500;
 }
 
+.mdl-layout__title::before {
+  content: 'Darkboard';
+}
+
 .mdl-layout__header {
   position: absolute;
   padding: 60px 80px 0 80px;
@@ -85,13 +89,13 @@ section p {
 }
 
 .container {
-  width: 940px;
+  max-width: 940px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .container-wide {
-  width: 1200px;
+  max-width: 1200px;
 }
 
 .outlined {
@@ -108,6 +112,10 @@ section p {
   font-weight: 500;
 }
 
+h1 .accent {
+  font-weight: inherit;
+}
+
 .filled-accent {
   background-color: #4285f4;
   color: white;
@@ -122,10 +130,28 @@ button.filled-accent:hover {
 }
 
 .mdl-navigation .mdl-navigation__link {
+  padding: 0 24px;
+  opacity: 1;
   line-height: 36px;
   text-transform: uppercase;
   text-decoration: none;
   font-weight: 500;
+}
+
+.jumbotron {
+  color: white;
+  background-image: url('images/space landscape_blue_2560 x 1440.png');
+  background-size: cover;
+  background-position: top;
+  display: flex;
+  flex-wrap: wrap;
+  /* height: 418px; */
+  align-items: stretch;
+  justify-content: space-evenly;
+  width: 100%;
+  padding-top: 235px;
+  padding-bottom: 240px;
+  position: relative;
 }
 
 .jumbotron h1 {
@@ -137,17 +163,10 @@ button.filled-accent:hover {
   text-transform: uppercase;
 }
 
-.jumbotron {
-  color: white;
-  background-image: url(images/space-landscape.png);
-  background-size: cover;
-  display: flex;
-  align-items: stretch;
-  justify-content: space-evenly;
-  width: 100%;
-  padding-top: 235px;
-  padding-bottom: 280px;
-  position: relative;
+.jumbotron-image {
+  background-image: url(images/group-2.png);
+  width: 601px;
+  height: 418px;
 }
 
 .jumbotron::after {
@@ -158,7 +177,7 @@ button.filled-accent:hover {
   border-top-left-radius: 50%;
   border-top-right-radius: 50%;
   background-color: var(--color-background);
-  bottom: 0;
+  bottom: -60px;
 }
 
 .jumbotron-caption {
@@ -221,6 +240,12 @@ button.filled-accent:hover {
   background-color: var(--dodger-blue);
 }
 
+#review .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 #review h2 {
   text-align: center;
   text-transform: uppercase;
@@ -232,7 +257,6 @@ button.filled-accent:hover {
 #review blockquote {
   margin: 0;
   text-align: center;
-  margin-bottom: 25px;
 }
 
 #review blockquote p {
@@ -286,11 +310,18 @@ button.filled-accent:hover {
 
 #tech .container>div {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
   margin-top: 60px;
 }
 
 #tech .container>div>div {
+  justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+}
+
+#tech .container>div>div>div {
   width: 110px;
   height: 110px;
   background-position: center;
@@ -371,6 +402,10 @@ button.filled-accent:hover {
   align-items: center;
 }
 
+#design img {
+  clip-path: circle(79px);
+}
+
 /* #design .circle {
   display: flex;
   justify-content: center;
@@ -440,4 +475,79 @@ button.filled-accent:hover {
 
 #contact button {
   margin-left: auto;
+}
+
+@media screen and (max-width: 1024px) {
+  .container-wide {
+    max-width: 940px;
+  }
+
+  .mdl-layout__header {
+    display: flex;
+  }
+
+  .mdl-layout__title {
+    font-size: 36px;
+  }
+
+  .mdl-navigation .mdl-navigation__link {
+    font-size: 20px;
+    padding: 12px 30px;
+    line-height: 20px;
+  }
+
+  .jumbotron {
+    padding-top: 200px;
+    padding-bottom: 120px;
+  }
+
+  .jumbotron-image {
+    background-image: url(images/laptop+dashboard_2.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 444px;
+  }
+
+  #review blockquote {
+    width: 580px;
+  }
+
+  #review blockquote p {
+    font-size: 26px;
+    line-height: 48px;
+  }
+
+  #tech {
+    padding-top: 230px;
+  }
+
+  #contact button {
+    font-size: 22px;
+    line-height: 0;
+    padding: 30px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .mdl-layout__title::before {
+    content: 'DB';
+  }
+
+  .demo span {
+    font-size: 24px;
+    line-height: 1.42;
+    letter-spacing: 1.6px;
+    margin: 20px;
+  }
+
+  .demo button {
+    font-size: 22px;
+    padding: 30px 46px;
+    line-height: 0;
+  }
+
+  #tech .container>div>div {
+    width: 100%;
+  }
 }
