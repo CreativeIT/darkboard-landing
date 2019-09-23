@@ -46,6 +46,10 @@ section p {
   text-align: justify;
 }
 
+.mdl-layout--small-screen-only {
+  display: none !important;
+}
+
 .mdl-card {
   background: #434343;
   color: #fff;
@@ -163,6 +167,7 @@ button.filled-accent:hover {
   text-transform: uppercase;
   text-decoration: none;
   font-weight: 500;
+  font-size: 16px;
 }
 
 .jumbotron {
@@ -329,14 +334,13 @@ button.filled-accent:hover {
   margin-top: 60px;
 }
 
-.technolagies>div {
+.technolagies > div {
   justify-content: space-around;
   display: flex;
   flex-direction: row;
-  width: 50%;
 }
 
-.technolagies>div>div {
+.technolagies > div > div {
   width: 100px;
   height: 100px;
   background-position: center;
@@ -524,6 +528,14 @@ section#tech {
   padding: 1rem 1rem 1rem 0;
 }
 
+#bundles .desciption .buy {
+  margin-top: 2rem;
+}
+
+#bundles .mdl-cell.buy {
+  display: none;
+}
+
 #bundles .features {
   width: 250px;
   min-width: 250px;
@@ -546,11 +558,41 @@ section#tech {
   background: #7d7d7d;
 }
 
-#proved h2{
+#proved h2 {
   text-align: center;
   font-size: 30px;
   font-weight: 500;
   color: rgba(0, 0, 0, 0.2);
+}
+
+#proved .items {
+  display: flex;
+  height: 90px;
+}
+
+#proved .producthunt img {
+  width: 400px;
+  height: 90px;
+}
+
+#proved .items > * {
+  margin-right: 1rem; 
+}
+
+#proved .clutch-widget {
+  background: #424143;
+  padding: 22px 0 0 1rem;
+  border-radius: 1rem;
+  margin: 2px 0;
+}
+
+#proved .uplabs {
+  display: block;
+  position: relative;
+  width: 300px;
+  height: 90px;
+  background: url('./images/uplabs.svg') no-repeat center;
+  background-size: contain;
 }
 
 #support {
@@ -623,6 +665,30 @@ section#tech {
     display: flex;
   }
 
+  .mdl-layout--large-screen-only { 
+    display: none;
+  }
+
+  .mdl-layout__title {
+    font-size: 20px;
+    max-width: 150px;
+  }
+
+  .mdl-layout__header {
+    padding: 20px 20px 0;
+  }
+
+  .mdl-navigation .mdl-navigation__link {
+    font-size: 16px;
+    padding: 8px 15px;
+    line-height: 16px;
+  }
+
+  .container {
+    padding-right: 1rem;
+    padding-left:  1rem;
+  }
+
   .mdl-layout__title {
     font-size: 36px;
   }
@@ -634,7 +700,7 @@ section#tech {
   }
 
   .jumbotron {
-    padding-top: 200px;
+    padding-top: 120px;
     padding-bottom: 120px;
   }
 
@@ -647,12 +713,13 @@ section#tech {
   }
 
   #review blockquote {
-    width: 580px;
+    max-width: 580px;
   }
 
   #review blockquote p {
     font-size: 26px;
     line-height: 48px;
+    padding: 0 1rem;
   }
 
   #tech {
@@ -664,11 +731,32 @@ section#tech {
     line-height: 0;
     padding: 30px;
   }
+
+  #proved .items {
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+  }
+
+  #proved .items > * {
+    margin-bottom: 1rem;
+  }
 }
 
 @media screen and (max-width: 640px) {
-  .mdl-layout__title::before {
-    content: 'DB';
+  .mdl-layout__title {
+    font-size: 20px;
+    max-width: 150px;
+  }
+
+  .mdl-layout__header {
+    padding: 20px 20px 0;
+  }
+
+  .mdl-navigation .mdl-navigation__link {
+    font-size: 16px;
+    padding: 8px 15px;
+    line-height: 16px;
   }
 
   .demo span {
@@ -686,5 +774,87 @@ section#tech {
 
   #tech .container>div>div {
     width: 100%;
+  }
+
+  #bundles .mdl-card__supporting-text {
+    flex-direction: column;
+  }
+
+  #bundles .features {
+    width: auto;
+    border-top: 1px solid #979797;
+    padding-left: 0;
+    border-left: none;
+    padding-top: 1.5rem;
+  }
+
+  #bundles .mdl-card__supporting-text {
+    padding: 1rem 0 0;
+  }
+
+  #bundles .desciption .buy {
+    display: none;
+  }
+
+  #bundles .mdl-cell.buy {
+    display: block;
+    margin-bottom: 0;
+  }
+
+  #bundles .mdl-list {
+    margin-top: 0;
+    padding-top: 0; 
+    list-style: square outside;
+    margin-left: 1rem;
+  }
+
+  .mdl-mini-footer {
+    padding: 0 20px 20px;
+  }
+
+  .mdl-layout--large-screen-only {
+    display: none;
+  }
+
+  .mdl-layout--small-screen-only {
+    display: block;
+  }
+
+  .jumbotron-image {
+    display: none;
+  }
+
+  .jumbotron {
+    padding: 120px 20px 120px;
+    width: auto;
+  }
+
+  .jumbotron h1 {
+    font-size: 36px;
+    line-height: 46px;
+  }
+
+  .jumbotron .demo button {
+    font-size: 18px;
+    padding: 20px 40px;
+    line-height: 0;
+  }
+
+  .jumbotron .demo span {
+    font-size: 18px;
+    margin: 20px 0;
+  }
+
+  .jumbotron-caption {
+    width: auto;
+  }
+
+  .jumbotron span.mdl-button__ripple-container {
+    margin: 0;
+  }
+
+  #review blockquote,
+  #review .author {
+    max-width: 100vw;
   }
 }

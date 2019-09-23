@@ -7,17 +7,19 @@
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue-indigo.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.css">
     <link rel="stylesheet" href="index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
     <header class="mdl-layout__header mdl-layout__header--transparent">
       <nav class="mdl-layout__header-row">
         <span class="mdl-layout__title"></span>
         <div class="mdl-layout-spacer"></div>
+        <div class="mdl-layout--large-screen-only">
+            Need custom solution? Write us to <a href="mailto:hello@creativeit.io">hello@creativeit.io</a>
+        </div>
         <nav class="mdl-navigation">
-          <div>
-              Need custom solution? Write us to <a href="mailto:hello@creativeit.io">hello@creativeit.io</a>
-          </div>
           <a href="docs.html" class="mdl-navigation__link mdl-js-ripple-effect">Docs</a>
+          <a href="#contact" class="mdl-layout--small-screen-only mdl-navigation__link mdl-js-ripple-effect outlined">Hire us</a>
         </nav>
       </nav>
     </header>
@@ -41,14 +43,14 @@
             <img src="images/cards.png" alt="" class="parallax-layer">
           </div>
         </div>
-        <div class="technolagies">
-          <div>
+        <div class="technolagies mdl-grid">
+          <div class="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet mdl-cell--8-col-phone">
             <div data-aos="fade-up" class="icon angular"></div>
             <div data-aos="fade-up" data-aos-delay="100" class="icon docker"></div>
             <div data-aos="fade-up" data-aos-delay="200" class="icon aws"></div>
             <div data-aos="fade-up" data-aos-delay="300" class="icon node"></div>
           </div>
-          <div>
+          <div class="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet mdl-cell--8-col-phone">
             <div data-aos="fade-up" data-aos-delay="400" class="icon aggrid"></div>
             <div data-aos="fade-up" data-aos-delay="500" class="icon html"></div>
             <div data-aos="fade-up" data-aos-delay="600" class="icon sass"></div>
@@ -220,6 +222,13 @@
                   <li>Material angular select</li>
                 </ul>
               </div>
+              <div class="mdl-cell buy">
+                  <span class="price">Free</span>
+                  <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored button--github">
+                    <i class="material-icons"></i>
+                    GitHub
+                  </button>
+                </div>
             </div>
           </div>
           <div class="mdl-card mdl-shadow--2dp" data-aos="fade-up">
@@ -254,6 +263,13 @@
                     <li>Video installation instruction</li>
                 </ul>
               </div>
+              <div class="mdl-cell buy">
+                  <span class="price">$150</span>
+                  <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored button--github">
+                    <i class="material-icons"></i>
+                    GitHub
+                  </button>
+                </div>
             </div>
           </div>
           <div class="mdl-card mdl-shadow--2dp" data-aos="fade-up">
@@ -288,6 +304,13 @@
                     <li>Video installation instruction</li>
                 </ul>
               </div>
+              <div class="mdl-cell buy">
+                  <span class="price">$90</span>
+                  <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored button--github">
+                    <i class="material-icons"></i>
+                    GitHub
+                  </button>
+                </div>
             </div>
           </div>
           <div class="mdl-card mdl-shadow--2dp" data-aos="fade-up">
@@ -322,6 +345,13 @@
                     <li>MIT License</li>
                 </ul>
               </div>
+              <div class="mdl-cell buy">
+                  <span class="price">free</span>
+                  <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored button--github">
+                    <i class="material-icons"></i>
+                    GitHub
+                  </button>
+                </div>
             </div>
           </div>
         </div>
@@ -329,6 +359,16 @@
       <section id="proved">
         <div class="container">
           <h2 data-aos="fade-up">Proved by the community</h2>
+          <div class="items" data-aos="fade-up">
+            <a class="uplabs" href="https://gridgum.com/themes/material-dashboard-lite/" target="_blank"
+              alt="Material dashboard lite | Gridgum"></a>
+            <a href="https://www.producthunt.com/posts/darkboard?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-darkboard"
+              target="_blank" class="producthunt">
+              <img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=143007&theme=dark"
+                alt="Darkboard - Completely open source admin dashboard | Product Hunt Embed" />
+            </a>
+            <div class="clutch-widget" data-url="https://widget.clutch.co" data-widget-type="2" data-height="60" data-darkbg="1" data-clutchcompany-id="786002"></div>
+          </div>
         </div>
       </section>
       <section id="design" class="mdl-color-text--white">
@@ -406,6 +446,7 @@
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.js"></script>
     <script defer src="https://buttons.github.io/buttons.js"></script>
+    <script type="text/javascript" src="https://widget.clutch.co/static/js/widget.js"></script> 
     <script type="text/javascript">
       document.addEventListener('DOMContentLoaded', () => {
         AOS.init({
