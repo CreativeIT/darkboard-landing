@@ -14,6 +14,21 @@ body {
   background-color: var(--color-background);
 }
 
+ /* custom scroll */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #999;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar-track {
+  background: #666;
+}
+
 a {
   text-decoration: none;
   font-weight: bold;
@@ -196,9 +211,8 @@ button.filled-accent:hover {
 }
 
 .jumbotron-image {
-  background-image: url(images/group-2.png);
-  width: 601px;
-  height: 418px;
+  width: 650px;
+  height: 415px;
 }
 
 .jumbotron::after {
@@ -576,7 +590,7 @@ section#tech {
 }
 
 #proved .items > * {
-  margin-right: 1rem; 
+  margin-right: 1rem;
 }
 
 #proved .clutch-widget {
@@ -665,7 +679,7 @@ section#tech {
     display: flex;
   }
 
-  .mdl-layout--large-screen-only { 
+  .mdl-layout--large-screen-only {
     display: none;
   }
 
@@ -705,11 +719,17 @@ section#tech {
   }
 
   .jumbotron-image {
-    background-image: url(images/laptop+dashboard_2.png);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
     width: 444px;
+    height: 315px;
+    order: 2;
+    margin-top: 2rem;
+  }
+
+  .mdl-layout--small-screen-only {
+    display: block !important;
   }
 
   #review blockquote {
@@ -803,7 +823,7 @@ section#tech {
 
   #bundles .mdl-list {
     margin-top: 0;
-    padding-top: 0; 
+    padding-top: 0;
     list-style: square outside;
     margin-left: 1rem;
   }
@@ -817,7 +837,7 @@ section#tech {
   }
 
   .mdl-layout--small-screen-only {
-    display: block;
+    display: block !important;
   }
 
   .jumbotron-image {
