@@ -580,23 +580,39 @@ button.filled-accent:hover {
 
 #community-badges .uplabs{
   background-image: url("images/uplabs.png");
+  background-size: 248px 87px;
   width: 248px;
   height: 87px;
   object-fit: contain;
+  margin: 60px 17px 17px 0;
 }
 
 #community-badges .product-hunter{
-  background-image: url("images/producthunter.png");
   width: 402px;
   height: 87px;
+  margin: 60px 17px 17px 0;
 }
 
-#community-badges span {
+#community-badges .clutch-widget {
+  width: 180px;
+  height: 87px;
   margin: 60px 17px 17px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  background-color: #16313b;
+}
+
+#community-badges .clutch-widget iframe {
+  margin-left: 50px;
+  margin-top: 25px;
+  height: 60px;
 }
 
 #community-badges .badges {
   display: flex;
+  align-items: center;
 }
 
 #tech {
@@ -677,6 +693,8 @@ button.filled-accent:hover {
 
 #tech .aws:hover {
   background-image: url(images/aws.svg);
+  height: 110px;
+  width: 71px;
 }
 
 #tech .node:hover {
