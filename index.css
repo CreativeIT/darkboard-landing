@@ -46,10 +46,7 @@ section p {
   text-align: justify;
 }
 
-.material-icons-outlined {
-  font-size: 42px;
-  color: #4285f4;
-}
+
 
 .mdl-layout__title {
   text-transform: uppercase;
@@ -286,6 +283,11 @@ button.filled-accent:hover {
   justify-content: center;
 }
 
+#grid .material-icons-outlined {
+  font-size: 42px;
+  color: #4285f4;
+}
+
 #grid .mdl-cell {
   padding: 20px;
   margin: 0 8px 8px 0;
@@ -397,6 +399,10 @@ button.filled-accent:hover {
 
 #bundles-grid {
   min-width: 765px;
+}
+
+#bundles .cell-content .actions span {
+  margin-right: 5px;
 }
 
 #bundles .mdl-grid>.mdl-cell {
