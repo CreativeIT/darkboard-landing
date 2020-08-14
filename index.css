@@ -295,6 +295,10 @@ button.filled-accent:hover {
   background-color: #434343;
 }
 
+#grid .cell-header {
+  margin-bottom: 10px;
+}
+
 #grid .cell-header h2 {
   margin-top: 0;
   margin-bottom: 0px;
@@ -427,6 +431,8 @@ button.filled-accent:hover {
 #bundles .cell-header {
   margin-left: 30px;
 }
+
+
 
 #bundles .cell-header h2 {
   margin-top: 0;
@@ -609,6 +615,10 @@ button.filled-accent:hover {
   height: 60px;
 }
 
+#community-badges .clutch-widget .content {
+  height: 200px;
+}
+
 #community-badges .badges {
   display: flex;
   align-items: center;
@@ -672,6 +682,7 @@ button.filled-accent:hover {
 
 #tech .sass {
   background-image: url(images/sass-normal.svg);
+  background-size: 100%;
 }
 
 #tech .gulp {
@@ -680,44 +691,51 @@ button.filled-accent:hover {
 
 #tech .d-3 {
   background-image: url(images/d-3-normal.svg);
+  background-size: 80%;
 }
 
 #tech .angular:hover {
   background-image: url(images/Angular.svg);
+  background-size: 110%;
 }
 
 #tech .docker:hover {
   background-image: url(images/docker.svg);
+  background-size: 110%;
 }
 
 #tech .aws:hover {
   background-image: url(images/aws.svg);
-  height: 110px;
-  width: 71px;
+  background-size: 100%;
+  margin-top: 5px;
+  height: 100%
 }
 
 #tech .node:hover {
   background-image: url(images/node.svg);
+  background-size: 106%;
+  margin-top: 3px;
+  height: 100%;
 }
 
 #tech .aggrid:hover {
   background-image: url(images/aggrid.svg);
+  background-size: 110%;
 }
 
 #tech .html:hover {
   background-image: url(images/html.svg);
+  background-size: 110%;
 }
 
 #tech .sass:hover {
   background-image: url(images/sass_hover.svg);
-}
-
-#tech .gulp:hover {
-  background-image: url(images/gulp_hover.svg);
+  background-size: 140%;
 }
 
 #tech .d-3:hover {
   background-image: url(images/d3_hover.svg);
+  background-size: 150%;
 }
 
 #design {
