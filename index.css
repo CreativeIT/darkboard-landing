@@ -166,9 +166,19 @@ button.filled-accent:hover {
 }
 
 .jumbotron-image {
-  background-image: url(images/group-2.png);
-  width: 601px;
-  height: 418px;
+  background-image: url(images/laptop+dashboard.png);
+  width: 678px;
+  height: 387px;
+  background-size: 678px 387px;
+}
+
+.jumbotron-image .youtube-video {
+  display: block;
+  width: 500px;
+  border: none;
+  height: 320px;
+  margin-top: 22px;
+  margin-left: 92px;
 }
 
 .jumbotron::after {
@@ -882,11 +892,20 @@ button.filled-accent:hover {
   }
 
   .jumbotron-image {
-    background-image: url(images/laptop+dashboard_2.png);
+    background-image: url(images/laptop+dashboard.png);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
     width: 444px;
+  }
+
+  .jumbotron-image .youtube-video {
+    display: block;
+    width: 328px;
+    border: none;
+    height: 206px;
+    margin-top: 83px;
+    margin-left: 60px;
   }
 
   #review blockquote {
